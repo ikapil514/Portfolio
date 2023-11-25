@@ -1,26 +1,16 @@
 import "./cv.css";
-import { Divider, Dialog, TextField, Button } from "@mui/material";
-import { useState } from "react";
+import { Divider } from "@mui/material";
 import { FaRegCopyright, FaHeart } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 export default function CV() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleDialogOpen() {
-    setIsOpen(true);
-  }
-
-  function handleDialogClose() {
-    setIsOpen(false);
-  }
   return (
     <div className="main-div">
       <div className="navbar-head">
         <div className="letter-img"></div>
-        <button className="mybtn" onClick={handleDialogOpen}>
+        <a href="mailto:kapilagarwal514@gamil.com" className="mybtn">
           Say Hello!
-        </button>
+        </a>
       </div>
       <div className="text-div">
         <div className="headline-txt">Frontend Developer</div>
@@ -87,9 +77,9 @@ export default function CV() {
             Intersted in collaborating with me? I'm always open to discussing
             product design work
           </div>
-          <button className="invite-btn" onClick={handleDialogOpen}>
+          <a href="mailto:kapilagarwal514@gamil.com" className="invite-btn">
             Let's Talk
-          </button>
+          </a>
         </div>
       </div>
       <div className="footer-div">
@@ -100,9 +90,6 @@ export default function CV() {
         <div className="social-logo">
           <a href="https://github.com/ikapil514">
             <div className="git same-css"></div>
-          </a>
-          <a href="https://github.com/ikapil514">
-            <div className="insta same-css"></div>
           </a>
           <a href="https://github.com/ikapil514">
             <div className="twitter same-css"></div>
@@ -121,27 +108,6 @@ export default function CV() {
           <FaHeart color="red" />
         </div>
       </div>
-      <Dialog open={isOpen} fullWidth>
-        <div className="close-div">
-          <IoMdClose size={26} onClick={handleDialogClose} />
-        </div>
-        <div className="dialog-text">
-          <h2>I'm excited to talk and learn from you.</h2>
-          <TextField
-            label="Email-ID"
-            placeholder="Enter Your Email-ID"
-            type="email"
-            margin="normal"
-          />
-          <br />
-          <button className="invite-btn" onClick={handleDialogClose}>
-            Send
-          </button>
-          <h2 className="text-field">
-            I will contact you as soon as possible. ThankYou!
-          </h2>
-        </div>
-      </Dialog>
     </div>
   );
 }
