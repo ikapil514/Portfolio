@@ -218,6 +218,10 @@ li{
     font-family: sans-serif;
 }
 
+.homefood-link:hover{
+    font-size: 18px;
+}
+
 .smalltxt1{
     width: 70%;
     margin: 25px 0 ;
@@ -234,7 +238,7 @@ li{
 }
 
 .project1, .project2:hover{
-    cursor: pointer;
+    cursor: grab;
 }
 
 .project-image{
@@ -253,7 +257,7 @@ li{
 }
 
 .project2:hover ~ .project-image{
-    background-image: url("../Images/farmhouse.JPG");
+    background-image: url("../Images/Cakery.JPG");
     background-size: contain;
 }
 
@@ -352,7 +356,7 @@ li{
 
 .close-div{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .text-field{margin-top: 2%;}
 

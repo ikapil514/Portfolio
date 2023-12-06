@@ -1,7 +1,6 @@
 import "./cv.css";
 import { Divider } from "@mui/material";
 import { FaRegCopyright, FaHeart } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
 
 export default function CV() {
   return (
@@ -53,7 +52,14 @@ export default function CV() {
         <h2 className="title">Pet Projects</h2>
         <div className="project-name">
           <div className="project1">
-            <div className="headtext1">Home Food Delivery</div>
+            <div className="headtext1">
+              <a
+                href="https://ikapil514.github.io/homefood/"
+                className="homefood-link"
+              >
+                Home Food Delivery
+              </a>
+            </div>
             <div className="smalltxt1">
               de'HoFoo is determined to create a smooth flow between home-chefs
               and foodies. By bringing them on one platform, the process becomes
@@ -61,11 +67,12 @@ export default function CV() {
             </div>
           </div>
           <div className="project2">
-            <div className="headtext1">Farm House Motel</div>
+            <div className="headtext1">Cakery</div>
             <div className="smalltxt1">
-              Providing amenities and facilities that cater to the needs of
-              guests, such as comfortable bedding, room cleanliness, in-room
-              amenities, and easy access to services.
+              Providing a E-commerce website for cake lovers. Come take a look,
+              order the cake u like or became baker who bakes a creamy cake for
+              others and fill them with sweetness and happiness. [in
+              Development]
             </div>
           </div>
           <div className="project-image"></div>
