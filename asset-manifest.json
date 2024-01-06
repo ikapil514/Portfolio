@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a0cfb81c.css",
-    "main.js": "/portfolio/static/js/main.e1bd2371.js",
+    "main.css": "/portfolio/static/css/main.4d853a3a.css",
+    "main.js": "/portfolio/static/js/main.4d2228d7.js",
     "static/js/787.e5bf260a.chunk.js": "/portfolio/static/js/787.e5bf260a.chunk.js",
     "static/media/bigimg1.png": "/portfolio/static/media/bigimg1.81c867ebc4a281b04655.png",
     "static/media/contact-remove.png": "/portfolio/static/media/contact-remove.3513bac858a390cedce5.png",
@@ -16,12 +16,12 @@
     "static/media/homefood-res.JPG": "/portfolio/static/media/homefood-res.b68bebe8c43a87f5bdd4.JPG",
     "static/media/cakery-res.JPG": "/portfolio/static/media/cakery-res.7a66f4573439136c2508.JPG",
     "index.html": "/portfolio/index.html",
-    "main.a0cfb81c.css.map": "/portfolio/static/css/main.a0cfb81c.css.map",
-    "main.e1bd2371.js.map": "/portfolio/static/js/main.e1bd2371.js.map",
+    "main.4d853a3a.css.map": "/portfolio/static/css/main.4d853a3a.css.map",
+    "main.4d2228d7.js.map": "/portfolio/static/js/main.4d2228d7.js.map",
     "787.e5bf260a.chunk.js.map": "/portfolio/static/js/787.e5bf260a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0cfb81c.css",
-    "static/js/main.e1bd2371.js"
+    "static/css/main.4d853a3a.css",
+    "static/js/main.4d2228d7.js"
   ]
 }
