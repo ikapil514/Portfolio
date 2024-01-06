@@ -224,10 +224,7 @@ li{
     margin: 30px 0;
 }
 
-.project2{
-    margin: 50px 0;
-}
-.project1-image{
+.project1-image, .project3-image{
     display: none;
     height: 300px;
     width: 500px;
@@ -235,12 +232,16 @@ li{
     background-size: contain;
 } 
 
+.project3-image{
+    background-image: url("../Images/even-motorsfull.JPG");
+}
+
 .project2-image{
     display: none;
     height: 200px;
     width: 400px;
     background-image: url("../Images/Cakery.JPG");
-    background-size: cover;
+    background-size: contain;
 } 
 
 .project1-phn-image, .project2-phn-image, .project3-phn-image{
@@ -295,7 +296,6 @@ li{
 
 .three-fields{
     width: 50%;
-    /* padding: 0 50px; */
     display: flex;
     flex-direction: column;
 }
@@ -407,7 +407,7 @@ li{
 
 @media all and (max-width:650px){
     .project1, .project2{
-        padding: 30px;
+        padding: 0 30px;
     }
     .project1-phn-image, .project2-phn-image, .project3-phn-image{
         height: 400px;
@@ -470,13 +470,14 @@ li{
     .project1-phn-image, .project2-phn-image, .project3-phn-image{
         display: none;
     }
-    .project1-image, .project2-image{
+    .project1-image, .project2-image, .project3-image{
         display: block;
         height: 200px;
-        width: 400px;
+        width: 100%;
     }
     .project1-data{
-        height: 300px;
+        height: 400px;
+        width: 100%;
     }
     .contact-img{
         display: none;
