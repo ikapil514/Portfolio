@@ -1,8 +1,20 @@
 import "./cv.css";
-import { Divider } from "@mui/material";
+import { Divider, TextField, Dialog } from "@mui/material";
+import { useState } from "react";
 import { FaRegCopyright, FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function CV() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleDialog() {
+    setIsOpen(true);
+  }
+
+  function handleDialogClose() {
+    setIsOpen(false);
+  }
+
   return (
     <div className="main-div">
       <div className="navbar-head">
@@ -50,32 +62,112 @@ export default function CV() {
       <Divider sx={{ backgroundColor: "black", width: "100%" }} />
       <div className="projects-div">
         <h2 className="title">Pet Projects</h2>
-        <div className="project-name">
+        <div>
           <div className="project1">
-            <div className="headtext1">
-              <a
-                href="https://ikapil514.github.io/homefood/"
-                className="homefood-link"
-              >
-                Home Food Delivery
-              </a>
-            </div>
-            <div className="smalltxt1">
-              de'HoFoo is determined to create a smooth flow between home-chefs
-              and foodies. By bringing them on one platform, the process becomes
-              easy and effective.
+            <div className="project1-image same-css"></div>
+            <div className="project1-phn-image"></div>
+            <div className="project1-data">
+              <div className="headtext1">
+                <a
+                  style={{ color: "orange" }}
+                  href="https://ikapil514.github.io/homefood/"
+                  className="homefood-link"
+                >
+                  Home Food Delivery
+                </a>
+              </div>
+              <div className="smalltxt1">
+                de'HoFoo is determined to create a smooth flow between
+                home-chefs and foodies. By bringing them on one platform, the
+                process becomes easy and effective.
+              </div>
+              <p className="smalltxt1">Languages : JAVASCRIPT, HTML, CSS </p>
+              <p className="smalltxt1">Tools : Marterial UI </p>
             </div>
           </div>
           <div className="project2">
-            <div className="headtext1">Cakery</div>
-            <div className="smalltxt1">
-              Providing a E-commerce website for cake lovers. Come take a look,
-              order the cake u like or became baker who bakes a creamy cake for
-              others and fill them with sweetness and happiness. [in
-              Development]
+            <div className="project2-image same-css"></div>
+            <div className="project1-data">
+              <div className="headtext1">
+                <a
+                  href="https://ikapil514.github.io/cake_shop/"
+                  className="homefood-link"
+                  style={{ color: "#ff4477" }}
+                >
+                  Cakery
+                </a>
+              </div>
+              <div className="smalltxt1">
+                Providing a E-commerce website for cake lovers. Come take a
+                look, order the cake u like or became baker who bakes a creamy
+                cake for others and fill them with sweetness and happiness.
+              </div>
+              <p className="smalltxt1">Languages : JAVASCRIPT, HTML, CSS </p>
+              <p className="smalltxt1">Tools : Marterial UI, Tailwind CSS </p>
+            </div>
+            <div className="project2-phn-image"></div>
+          </div>
+          <div className="project1">
+            <div className="project3-phn-image"></div>
+            <div className="project3-image same-css"></div>
+            <div className="project1-data">
+              <div className="headtext1">
+                <a
+                  href="https://ikapil514.github.io/Even-Motors/"
+                  className="homefood-link"
+                >
+                  Even Motors
+                </a>
+              </div>
+              <div className="smalltxt1">
+                de'HoFoo is determined to create a smooth flow between
+                home-chefs and foodies. By bringing them on one platform, the
+                process becomes easy and effective.
+              </div>
+              <p className="smalltxt1">Languages : JAVASCRIPT, HTML, CSS </p>
             </div>
           </div>
-          <div className="project-image"></div>
+        </div>
+      </div>
+      <Divider
+        sx={{ backgroundColor: "black", width: "100%", marginBottom: "20px" }}
+      />
+      <h2 className="title">Get In Touch with Me</h2>
+      <div className="contact-form">
+        <div className="contact-img same-css"></div>
+        <div className="three-fields">
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Name"
+            placeholder="Enter Your Name"
+          />
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Email"
+            type="email"
+            placeholder="example123@abc.com"
+          />
+          <TextField
+            fullWidth
+            margin="normal"
+            minRows={3}
+            maxRows={3}
+            multiline
+            label="Message Us"
+            placeholder="Enter your Message"
+            type="text"
+          />
+          <div
+            style={{
+              marginTop: "10px",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <button className="mybtn">Submit</button>
+          </div>
         </div>
       </div>
       <div className="halfline">
@@ -84,9 +176,60 @@ export default function CV() {
             Intersted in collaborating with me? I'm always open to discussing
             product design work
           </div>
-          <a href="mailto:kapilagarwal514@gamil.com" className="invite-btn">
+          <a onClick={handleDialog} className="invite-btn">
             Let's Talk
           </a>
+          <Dialog
+            open={isOpen}
+            PaperProps={{
+              sx: {
+                height: "70%",
+                width: "50%",
+                maxHeight: "100%",
+                maxWidth: "100%",
+              },
+            }}
+          >
+            <div className="contact-form">
+              <h2 className="contact-title">Contact Us</h2>
+              <div className="three-fields">
+                <TextField
+                  fullWidth
+                  margin="normal"
+                  label="Name"
+                  placeholder="Enter Your Name"
+                />
+                <TextField
+                  fullWidth
+                  margin="normal"
+                  label="Email"
+                  type="email"
+                  placeholder="example123@abc.com"
+                />
+                <TextField
+                  fullWidth
+                  margin="normal"
+                  minRows={3}
+                  maxRows={3}
+                  multiline
+                  label="Message Us"
+                  placeholder="Enter your Message"
+                  type="text"
+                />
+                <div
+                  style={{
+                    marginTop: "10px",
+                    display: "flex",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <button className="mybtn" onClick={handleDialogClose}>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Dialog>
         </div>
       </div>
       <div className="footer-div">

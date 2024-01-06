@@ -15,8 +15,8 @@
 
 .profile-img{
     margin-top: 35px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 100px;
     background-image: url("../Images/profile.jpg");
     background-repeat: no-repeat;
@@ -26,8 +26,8 @@
 
 .big-img{
     margin-top: 2%;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 500px;
     background-image: url("../Images/bigimg1.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -40,36 +40,36 @@
 }
 
 .bootstrap{
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     background-image: url("../Images/bootstrap.png");
     background-size: contain;    
 }
 
 .material-ui{
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     background-image: url("../Images/matarialUI.png");
     background-size: cover;
 }
 
 .tailwind{
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     background-image: url("../Images/tailwind.png");
     background-size: cover;
 }
 
 .github{
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     background-image: url("../Images/github.png");
     background-size: contain;
 }
 
 .figma{
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     background-image: url("../Images/figma.png");
     background-size: contain;
 }
@@ -104,14 +104,14 @@
 }
 
 .headline-txt{
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 600;
     font-family: monospace;
 }
 
 .secondary-txt{
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: sans-serif;
 }
 
@@ -125,16 +125,16 @@
 }
 
 .intro{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     font-family: sans-serif;
     margin-top: 50px;
-
 }
 
 .intro-child{
     margin: 30px 0;
     font-family: monospace;
+    font-size: 17px;
     width: 50%;
 }
 
@@ -147,7 +147,7 @@
 }
 .lng-play{
     padding: 25px;
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 500;
     font-family: sans-serif;
     color: #fabb08;
@@ -179,7 +179,7 @@ li{
 }
 
 .tools{
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 600;
     font-family: sans-serif;
 }
@@ -199,66 +199,110 @@ li{
 }
 
 .title{
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 600;
     font-family: sans-serif;
     text-align: center;
 }
 
-.project-name{
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .headtext1{
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 600;
     font-family: sans-serif;
 }
 
-.homefood-link:hover{
-    font-size: 18px;
-}
-
 .smalltxt1{
-    width: 70%;
-    margin: 25px 0 ;
-    text-align: center;
     font-family: monospace;
+    font-size: 17px;
 }
 
 .project1, .project2{
-    /* width: 35%; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.project2{
+    margin: 50px 0;
+}
+.project1-image{
+    display: none;
+    height: 300px;
+    width: 500px;
+    background-image: url("../Images/homefood.JPG");
+    background-size: contain;
+} 
+
+.project2-image{
+    display: none;
+    height: 200px;
+    width: 400px;
+    background-image: url("../Images/Cakery.JPG");
+    background-size: cover;
+} 
+
+.project1-phn-image, .project2-phn-image, .project3-phn-image{
+    height: 500px;
+    width: 300px;
+    background-image: url("../Images/homefood-res.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project2-phn-image{
+    background-image: url("../Images/cakery-res.JPG");
+}
+
+.project3-phn-image{
+    background-image: url("../Images/enen-motors.JPG");
+}
+
+.project1-data{
+    height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.tools-image{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tools-headline{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
-
-.project1, .project2:hover{
-    cursor: grab;
-}
-
-.project-image{
+.contact-img{
     height: 200px;
-    width: 400px;
-    background-image: url("../Images/project.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 2%;
-}
-
-.project1:hover ~ .project-image{
-    background-image: url("../Images/homefood.JPG");
+    width: 200px;
+    background-image: url("../Images/contact-remove.png");
     background-size: contain;
 }
 
-.project2:hover ~ .project-image{
-    background-image: url("../Images/Cakery.JPG");
-    background-size: contain;
+.three-fields{
+    width: 50%;
+    /* padding: 0 50px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title{
+    font-family: sans-serif;
+    margin: 20px 0;
 }
 
 .halfline{
@@ -290,7 +334,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 110px;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -362,6 +406,15 @@ li{
 
 
 @media all and (max-width:650px){
+    .project1, .project2{
+        padding: 30px;
+    }
+    .project1-phn-image, .project2-phn-image, .project3-phn-image{
+        height: 400px;
+    }
+    .project1-data{
+        padding: 10px;
+    }
     .invite-button{
         width: 80%;
         flex-direction: column;
@@ -385,10 +438,52 @@ li{
     }
 }
 
-@media all and (max-width:400px){
+@media all and (max-width:450px){
+    .profile-img, .material-ui, .tailwind, .bootstrap, .github, .figma{
+        height: 100px ;
+        width: 100px;
+    }
     .big-img{
         height: 150px;
         width: 300px;
         background-size: cover;
     }
+    .headline-txt, .intro, .lng-play, .tools{
+        font-size: 24px;
+    }
+    .secondary-txt{
+        font-size: 12px;
+    }
+    .intro-child{
+        font-size: 15px;
+        width: 80%;
+    }
+    .headtext1{
+        font-size: 26px;
+    }
+    .smalltxt1{
+        font-size: 15px;
+    }
+    .project1, .project2{
+        flex-direction: column;
+    }
+    .project1-phn-image, .project2-phn-image, .project3-phn-image{
+        display: none;
+    }
+    .project1-image, .project2-image{
+        display: block;
+        height: 200px;
+        width: 400px;
+    }
+    .project1-data{
+        height: 300px;
+    }
+    .contact-img{
+        display: none;
+    }
+    .three-fields{
+        width: 70%;
+        padding: 0;
+    }
+
 }
