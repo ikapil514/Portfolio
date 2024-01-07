@@ -121,10 +121,10 @@ export default function CV() {
                 </button>
               </div>
               <div className="smalltxt1">
-                A two-wheeler electric vehicle showroom is a retail space
-                dedicated to showcasing and promoting electric scooters, bikes,
-                and other two-wheeled electric vehicles (EVs). These showrooms
-                play a pivotal role in introducing consumers to the benefits of
+                A two-wheeler electric vehicle website is dedicated to
+                showcasing and promoting electric scooters, and other
+                two-wheeled electric vehicles (EVs). These websites play a
+                pivotal role in introducing consumers to the benefits of
                 electric mobility on a smaller scale. They typically feature a
                 variety of electric two-wheelers, allowing potential buyers to
                 explore different models, understand their features, and inquire
