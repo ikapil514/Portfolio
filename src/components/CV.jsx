@@ -2,7 +2,7 @@ import "./cv.css";
 import { Divider, TextField, Dialog } from "@mui/material";
 import { useState } from "react";
 import { FaRegCopyright, FaHeart } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 export default function CV() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,18 @@ export default function CV() {
 
   function handleDialogClose() {
     setIsOpen(false);
+  }
+
+  function handleEvenMotors() {
+    window.location.href = "https://ikapil514.github.io/Even-Motors/";
+  }
+
+  function handleHomeFood() {
+    window.location.href = "https://ikapil514.github.io/homefood/";
+  }
+
+  function handleCakery() {
+    window.location.href = "https://ikapil514.github.io/cake_shop/";
   }
 
   return (
@@ -68,13 +80,9 @@ export default function CV() {
             <div className="project1-phn-image"></div>
             <div className="project1-data">
               <div className="headtext1">
-                <a
-                  style={{ color: "orange" }}
-                  href="https://ikapil514.github.io/homefood/"
-                  className="homefood-link"
-                >
+                <button className="link-1" onClick={handleHomeFood}>
                   Home Food Delivery
-                </a>
+                </button>
               </div>
               <div className="smalltxt1">
                 de'HoFoo is determined to create a smooth flow between
@@ -89,13 +97,9 @@ export default function CV() {
             <div className="project2-image same-css"></div>
             <div className="project1-data">
               <div className="headtext1">
-                <a
-                  href="https://ikapil514.github.io/cake_shop/"
-                  className="homefood-link"
-                  style={{ color: "#ff4477" }}
-                >
+                <button className="link-2" onClick={handleCakery}>
                   Cakery
-                </a>
+                </button>
               </div>
               <div className="smalltxt1">
                 Providing a E-commerce website for cake lovers. Come take a
@@ -112,17 +116,19 @@ export default function CV() {
             <div className="project3-image same-css"></div>
             <div className="project1-data">
               <div className="headtext1">
-                <a
-                  href="https://ikapil514.github.io/Even-Motors/"
-                  className="homefood-link"
-                >
+                <button className="link-3" onClick={handleEvenMotors}>
                   Even Motors
-                </a>
+                </button>
               </div>
               <div className="smalltxt1">
-                de'HoFoo is determined to create a smooth flow between
-                home-chefs and foodies. By bringing them on one platform, the
-                process becomes easy and effective.
+                A two-wheeler electric vehicle showroom is a retail space
+                dedicated to showcasing and promoting electric scooters, bikes,
+                and other two-wheeled electric vehicles (EVs). These showrooms
+                play a pivotal role in introducing consumers to the benefits of
+                electric mobility on a smaller scale. They typically feature a
+                variety of electric two-wheelers, allowing potential buyers to
+                explore different models, understand their features, and inquire
+                about charging solutions.
               </div>
               <p className="smalltxt1">Languages : JAVASCRIPT, HTML, CSS </p>
             </div>
@@ -176,22 +182,24 @@ export default function CV() {
             Intersted in collaborating with me? I'm always open to discussing
             product design work
           </div>
-          <a onClick={handleDialog} className="invite-btn">
+          <button onClick={handleDialog} className="invite-btn">
             Let's Talk
-          </a>
+          </button>
           <Dialog
             open={isOpen}
             PaperProps={{
               sx: {
                 height: "70%",
-                width: "50%",
+                width: "60%",
                 maxHeight: "100%",
                 maxWidth: "100%",
               },
             }}
           >
+            <div onClick={handleDialogClose} className="backbtn">
+              <IoIosArrowRoundBack size={30} />
+            </div>
             <div className="contact-form">
-              <h2 className="contact-title">Contact Us</h2>
               <div className="three-fields">
                 <TextField
                   fullWidth
