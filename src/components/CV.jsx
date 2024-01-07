@@ -123,12 +123,10 @@ export default function CV() {
               <div className="smalltxt1">
                 A two-wheeler electric vehicle website is dedicated to
                 showcasing and promoting electric scooters, and other
-                two-wheeled electric vehicles (EVs). These websites play a
-                pivotal role in introducing consumers to the benefits of
-                electric mobility on a smaller scale. They typically feature a
-                variety of electric two-wheelers, allowing potential buyers to
-                explore different models, understand their features, and inquire
-                about charging solutions.
+                two-wheeled electric vehicles (EVs). This website typically
+                feature a variety of electric two-wheelers, allowing potential
+                buyers to explore different models, understand their features,
+                and inquire about charging solutions.
               </div>
               <p className="smalltxt1">Languages : JAVASCRIPT, HTML, CSS </p>
             </div>
@@ -153,7 +151,7 @@ export default function CV() {
             margin="normal"
             label="Email"
             type="email"
-            placeholder="example123@abc.com"
+            placeholder="example@domain.com"
           />
           <TextField
             fullWidth
@@ -161,7 +159,7 @@ export default function CV() {
             minRows={3}
             maxRows={3}
             multiline
-            label="Message Us"
+            label="Message Me"
             placeholder="Enter your Message"
             type="text"
           />
@@ -187,10 +185,10 @@ export default function CV() {
           </button>
           <Dialog
             open={isOpen}
+            // className="dialog-box"
             PaperProps={{
               sx: {
-                height: "70%",
-                width: "60%",
+                padding: "20px",
                 maxHeight: "100%",
                 maxWidth: "100%",
               },
