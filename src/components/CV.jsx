@@ -122,11 +122,10 @@ export default function CV() {
               </div>
               <div className="smalltxt1">
                 A two-wheeler electric vehicle website is dedicated to
-                showcasing and promoting electric scooters, and other
-                two-wheeled electric vehicles (EVs). This website typically
-                feature a variety of electric two-wheelers, allowing potential
-                buyers to explore different models, understand their features,
-                and inquire about charging solutions.
+                showcasing and promoting electric scooters (EVs). This website
+                typically feature a variety of electric two-wheelers, allowing
+                potential buyers to explore different models, understand their
+                features, and inquire about charging solutions.
               </div>
               <p className="smalltxt1">Languages : JAVASCRIPT, HTML, CSS </p>
             </div>
@@ -185,10 +184,23 @@ export default function CV() {
           </button>
           <Dialog
             open={isOpen}
-            // className="dialog-box"
             PaperProps={{
               sx: {
-                padding: "20px",
+                margin: "0",
+                width: {
+                  xs: 400,
+                  sm: 600,
+                  md: 600,
+                  lg: 600,
+                  xl: 600,
+                },
+                height: {
+                  xs: 550, //0
+                  sm: 450, //600
+                  md: 450, //900
+                  lg: 430, //1200
+                  xl: 430, //1536
+                },
                 maxHeight: "100%",
                 maxWidth: "100%",
               },
